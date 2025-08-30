@@ -20,6 +20,8 @@ services:
     image: mongo:latest
     container_name: mongodb_vinted_public
     command: mongod --port 27018
+    volumes:
+      - .:/app
     ports:
       - "127.0.0.1:27018:27018"
     volumes:
