@@ -4,9 +4,9 @@ services:
   app:
     image: node:20.18.1
     container_name: vinted_app
-    working_dir: /app
+    working_dir: /
     volumes:
-      - .:/app
+      - /node_modules
     environment:
       - NODE_ENV=development
     command: sh -c "npm install && npm start"
