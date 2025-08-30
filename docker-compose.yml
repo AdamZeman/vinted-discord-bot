@@ -23,7 +23,7 @@ services:
     ports:
       - "127.0.0.1:27018:27018"
     volumes:
-      - ../.:/app
+      - ./:/app
       - mongodb_data_container:/data/db
     networks:
       - vinted-network
